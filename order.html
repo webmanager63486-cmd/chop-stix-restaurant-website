@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Order from Chop-Stix Restaurant.">
+  <title>Order Online | Chop-Stix</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="order-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Chop-Stix home">
+      <span class="brand-mark"><svg viewBox="0 0 64 64" fill="none"><path d="M8 31h48c-3 12-13 20-24 20S11 43 8 31Z" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M14 31h36M32 51v5M22 58h20" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><path d="M42 15c0-4 4-6 7-3 3 3-1 7-4 7M44 19c-3 3-6 1-6-2" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+      <span><strong>Chop-Stix</strong><small>RESTAURANT</small></span>
+    </a>
+    <nav class="desktop-nav"><a href="index.html">Home</a><a href="#pizza">Pizza</a><a href="#chinese">Chinese</a><button class="cart-pill" id="openCart">Cart <b id="cartCount">0</b></button></nav>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <section class="order-hero">
+    <div><p class="eyebrow">CHOP-STIX • ORDER ONLINE</p><h1>Pick your <em>favourites.</em></h1><p>Tap “Add to order” on anything that looks good. Your basket stays with you while you browse.</p></div>
+    <div class="order-note">S / M pricing shown<br><small>₹ Indian Rupees</small></div>
+  </section>
+
+  <div class="order-layout">
+    <main class="menu-list" id="menuList"></main>
+    <aside class="cart-panel" id="cartPanel">
+      <div class="cart-head"><div><span class="eyebrow">YOUR ORDER</span><h2>Basket</h2></div><button id="closeCart" aria-label="Close cart">×</button></div>
+      <div id="cartItems" class="cart-items"><div class="empty-cart">Your basket is empty.<br><span>Add something delicious.</span></div></div>
+      <div class="cart-footer">
+        <div class="subtotal"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+        <button class="checkout" id="checkout">Review order <span>→</span></button>
+        <small>Final availability and delivery charges may vary.</small>
+      </div>
+    </aside>
+  </div>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <div class="toast" id="toast">Added to your order</div>
+
+  <dialog id="checkoutDialog">
+    <button class="dialog-close" onclick="document.getElementById('checkoutDialog').close()">×</button>
+    <p class="eyebrow">ORDER SUMMARY</p><h2>You're almost <em>there.</em></h2>
+    <div id="dialogSummary"></div>
+    <div class="dialog-total"><span>Total</span><strong id="dialogTotal">₹0</strong></div>
+    <div class="customer-fields">
+      <input id="customerName" placeholder="Your name" autocomplete="name">
+      <input id="customerPhone" placeholder="Phone number" autocomplete="tel">
+    </div>
+    <a id="callOrder" class="btn btn-primary full" href="tel:+919716748708">Call 097167 48708</a>
+    <p class="dialog-note">This front-end demo prepares your order. Confirm availability and delivery details by phone.</p>
+  </dialog>
+
+  <script src="order.js"></script>
+</body>
+</html>

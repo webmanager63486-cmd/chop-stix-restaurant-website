@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <meta name="description" content="Chop-Stix Restaurant — Chinese favourites, momos, noodles and pizza in Dwarka Mor, Delhi.">
+  <title>Chop-Stix Restaurant | Delhi</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Freshly made • Delivery friendly • Dwarka Mor, Delhi</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Chop-Stix home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <path d="M8 31h48c-3 12-13 20-24 20S11 43 8 31Z" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
+          <path d="M14 31h36M32 51v5M22 58h20" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M42 15c0-4 4-6 7-3 3 3-1 7-4 7M44 19c-3 3-6 1-6-2" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>
+        <strong>Chop-Stix</strong>
+        <small>RESTAURANT</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a class="nav-order" href="order.html">Order Online <span>↗</span></a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <div class="mobile-nav" aria-hidden="true">
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="order.html">Order Online ↗</a>
+  </div>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">DWARKA MOR • NEW DELHI</p>
+        <h1>Big flavour.<br><em>Zero fuss.</em></h1>
+        <p class="hero-text">Chinese favourites, momos, noodles and loaded pizzas made for the kind of meal you remember.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="order.html">Explore the menu <span>→</span></a>
+          <a class="btn btn-ghost" href="tel:+919716748708">Call to order</a>
+        </div>
+        <div class="micro-trust">
+          <span>★ 4.1</span><span>•</span><span>Local favourite</span><span>•</span><span>Delivery available</span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal delay-1">
+        <div class="glow"></div>
+        <div class="plate">
+          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1100&q=85" alt="Steamed dumplings">
+          <div class="plate-tag">CHOP-STIX<br><span>signature</span></div>
+        </div>
+        <div class="floating-card top">HOT & FRESH <strong>🥟</strong></div>
+        <div class="floating-card bottom"><strong>4.1</strong><span>customer rating</span></div>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div><span>01</span><strong>Made to order</strong><small>Fresh, hot & packed right</small></div>
+      <div><span>02</span><strong>Comfort classics</strong><small>Momos, noodles & pizza</small></div>
+      <div><span>03</span><strong>Easy ordering</strong><small>Tap, add, review & order</small></div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">THE HOUSE MENU</p>
+          <h2>Favourites, <em>sorted.</em></h2>
+        </div>
+        <a href="order.html" class="text-link">View full order menu →</a>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card large reveal" href="order.html#pizza">
+          <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=85" alt="Pizza">
+          <div class="category-overlay"><span>Pizza</span><strong>Loaded. Cheesy. Serious.</strong><b>Explore →</b></div>
+        </a>
+        <a class="category-card reveal delay-1" href="order.html#chinese">
+          <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=85" alt="Noodles">
+          <div class="category-overlay"><span>Chinese</span><strong>Wok-fired comfort</strong><b>Explore →</b></div>
+        </a>
+        <a class="category-card reveal delay-2" href="order.html#momos">
+          <img src="https://images.unsplash.com/photo-1626776876729-bab4369a5a5a?auto=format&fit=crop&w=800&q=85" alt="Momos">
+          <div class="category-overlay"><span>Momos</span><strong>Steamed & saucy</strong><b>Explore →</b></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-image reveal">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1100&q=85" alt="Restaurant table with food">
+        <span class="stamp">EST.<br><b>CHOP</b></span>
+      </div>
+      <div class="story-copy reveal delay-1">
+        <p class="eyebrow">A LOCAL FAVOURITE</p>
+        <h2>Good food should feel <em>effortless.</em></h2>
+        <p>Chop-Stix is built around familiar comfort food with a little extra attitude — crisp vegetables, saucy noodles, momos and pizzas that don't take themselves too seriously.</p>
+        <p>We're in Bhagwati Garden Extension, Nawada, serving the Dwarka Mor neighbourhood.</p>
+        <div class="address">
+          <span>⌖</span>
+          <div><strong>Find us</strong><br>Gali-10, Jain Rd, Dwarka Mor,<br>Bhagwati Garden Extension, Nawada,<br>Delhi, 110059</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="section-heading">
+        <div><p class="eyebrow">FROM THE NEIGHBOURHOOD</p><h2>What people <em>say.</em></h2></div>
+        <div class="rating-big"><strong>4.1</strong><span>★★★★★<small>Google reviews</small></span></div>
+      </div>
+      <div class="review-grid">
+        <article class="review-card"><div class="stars">★★★★★</div><p>“Their noodles and momos are really good and always satisfying. I order from here multiple times a month.”</p><footer>Harsh Barnwal <span>Local Guide</span></footer></article>
+        <article class="review-card"><div class="stars">★★★★★</div><p>“One of the most tanduri chiken I have taken.”</p><footer>Ankur Hazarika</footer></article>
+        <article class="review-card"><div class="stars">★★★★★</div><p>“If you want good taste, you should definitely try this outlet.”</p><footer>Sourabh Kumar</footer></article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div><p class="eyebrow">READY WHEN YOU ARE</p><h2>Let's make dinner<br><em>interesting.</em></h2></div>
+      <a class="btn btn-light" href="order.html">Order from Chop-Stix <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><strong>Chop-Stix</strong><span>Restaurant</span></div>
+    <div><small>Call</small><a href="tel:+919716748708">097167 48708</a></div>
+    <div><small>Address</small><span>Gali-10, Jain Rd, Dwarka Mor, Delhi 110059</span></div>
+    <div><small>Partners</small><span>Swiggy • Magicpin • Zomato</span></div>
+    <div class="copyright">© 2026 Chop-Stix Restaurant</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
